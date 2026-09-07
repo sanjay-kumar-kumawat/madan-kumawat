@@ -1,0 +1,29 @@
+@layer utilities {
+    .skill-tag {
+        @apply px-3 py-1 rounded-md bg-slate-800/80 border border-slate-700/50 text-slate-300 text-xs font-mono;
+    }
+    .mini-tag {
+        @apply px-2.5 py-0.5 rounded bg-slate-800 text-slate-400 text-[11px] font-mono;
+    }
+    .filter-btn {
+        @apply px-4 py-2 rounded-xl text-xs font-medium text-slate-400 hover:text-white bg-slate-900/60 border border-slate-800 transition;
+    }
+    .filter-btn.active {
+        @apply bg-indigo-600 text-white border-indigo-500 shadow-lg shadow-indigo-500/20;
+    }
+    .project-card {
+        @apply p-6 rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-slate-700 transition flex flex-col justify-between;
+    }
+}
+
+/* Custom Scrollbar for Terminal */
+#terminal-output::-webkit-scrollbar {
+    width: 6px;
+}
+#terminal-output::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+}
+#terminal-output::-webkit-scrollbar-thumb {
+    background: rgba(51, 65, 85, 0.8);
+    border-radius: 3px;
+}
