@@ -43,7 +43,7 @@
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-cyan-400 transition">About</a>
                 <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
-                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects Catalog</a>
                 <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
                 <a href="#terminal" class="hover:text-cyan-400 transition flex items-center gap-1.5 text-emerald-400"><i data-lucide="terminal" class="w-4 h-4"></i> MCP Terminal</a>
             </div>
@@ -67,15 +67,15 @@
             </h1>
 
             <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
-                Senior Full-Stack Engineer with 10+ years of experience leading mobile ecosystems (iOS, Swift, SwiftUI) and pioneering AI Agentic Workflows (MCP, local LLMs, quantized inference on Apple Silicon).
+                Senior Full-Stack Engineer with 10+ years of experience leading mobile ecosystems (iOS, Swift, SwiftUI) and pioneering AI Agentic Workflows (MCP, local LLMs, quantized inference on Apple Silicon). Transitioning to an autonomous IC in the AI Agentic Era.
             </p>
 
             <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
                 <a href="#projects" class="px-8 py-4 rounded-xl bg-white text-slate-900 font-bold hover:bg-slate-200 transition shadow-xl flex items-center gap-2">
-                    <i data-lucide="folder-git-2" class="w-5 h-5"></i> Explore 20+ Projects
+                    <i data-lucide="folder-git-2" class="w-5 h-5"></i> Explore Full Catalog (20 Projects)
                 </a>
                 <a href="#terminal" class="px-8 py-4 rounded-xl border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-200 font-medium transition backdrop-blur-sm flex items-center gap-2">
-                    <i data-lucide="bot" class="w-5 h-5 text-emerald-400"></i> Run Interactive AI Prompt
+                    <i data-lucide="bot" class="w-5 h-5 text-emerald-400"></i> Run MCP Agent Terminal
                 </a>
             </div>
 
@@ -86,8 +86,8 @@
                     <div class="text-sm text-slate-400">Engineering Mastery</div>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-extrabold text-emerald-400">20+ Apps</div>
-                    <div class="text-sm text-slate-400">Shipped Globally</div>
+                    <div class="text-3xl font-extrabold text-emerald-400">20 Projects</div>
+                    <div class="text-sm text-slate-400">Cataloged Below</div>
                 </div>
                 <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
                     <div class="text-3xl font-extrabold text-indigo-400">MCP & LLMs</div>
@@ -109,7 +109,7 @@
                     <h2 class="text-2xl font-bold flex items-center gap-2 text-white">
                         <i data-lucide="terminal" class="text-emerald-400"></i> Model Context Protocol (MCP) Terminal
                     </h2>
-                    <p class="text-slate-400 text-sm">Query Madan's resume using mock MCP interactive agents.</p>
+                    <p class="text-slate-400 text-sm">Query Madan's catalog and resume using mock MCP interactive agents.</p>
                 </div>
                 <div class="flex items-center gap-2">
                     <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
@@ -120,19 +120,19 @@
 
             <div class="bg-slate-950 rounded-2xl border border-slate-800 p-6 font-mono text-sm shadow-2xl overflow-hidden">
                 <div id="terminal-output" class="space-y-3 h-64 overflow-y-auto mb-4 text-slate-300 pr-2">
-                    <div class="text-slate-500">// Welcome to Madan's AI Agent Environment v2.6</div>
+                    <div class="text-slate-500">// Welcome to Madan's AI Agent Environment</div>
                     <div class="text-emerald-400">> System Ready. Type a command or click a preset query below.</div>
                 </div>
                 
                 <div class="flex items-center gap-2 border-t border-slate-800 pt-4">
                     <span class="text-emerald-400 font-bold">$</span>
-                    <input type="text" id="terminal-input" placeholder="e.g. 'ai-stack', 'contact', 'summary', 'clear'..." class="w-full bg-transparent border-none text-white focus:outline-none font-mono">
+                    <input type="text" id="terminal-input" placeholder="e.g. 'ai-stack', 'projects-list', 'contact', 'clear'..." class="w-full bg-transparent border-none text-white focus:outline-none font-mono">
                     <button id="terminal-send" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-sans text-xs font-semibold">Execute</button>
                 </div>
 
                 <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-900">
                     <button onclick="runCommand('ai-stack')" class="px-3 py-1 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-indigo-300 transition">ai-stack</button>
-                    <button onclick="runCommand('flagship-projects')" class="px-3 py-1 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-cyan-300 transition">flagship-projects</button>
+                    <button onclick="runCommand('projects-list')" class="px-3 py-1 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-cyan-300 transition">projects-list</button>
                     <button onclick="runCommand('contact')" class="px-3 py-1 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-emerald-300 transition">contact</button>
                 </div>
             </div>
@@ -157,10 +157,12 @@
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">Autonomous agent design, local LLM quantization (GGUF), Model Context Protocol (MCP), and Cursor IDE integration.</p>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag">MCP</span>
-                        <span class="skill-tag">Local LLMs</span>
-                        <span class="skill-tag">GGUF/Llama.cpp</span>
-                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Autonomous Agents</span>
+                        <span class="skill-tag">GGUF / Llama.cpp</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">Prompt Engineering</span>
                         <span class="skill-tag">Claude / OpenAI API</span>
+                        <span class="skill-tag">Cursor / Antigravity</span>
                     </div>
                 </div>
 
@@ -175,8 +177,10 @@
                         <span class="skill-tag">Swift & SwiftUI</span>
                         <span class="skill-tag">Objective-C</span>
                         <span class="skill-tag">React Native</span>
-                        <span class="skill-tag">CallKit / PushKit</span>
+                        <span class="skill-tag">iOS SDK & CoreData</span>
+                        <span class="skill-tag">CallKit & PushKit</span>
                         <span class="skill-tag">Combine</span>
+                        <span class="skill-tag">Xcode & TestFlight</span>
                     </div>
                 </div>
 
@@ -188,11 +192,12 @@
                     <h3 class="text-xl font-bold text-white mb-3">Full-Stack & Cloud</h3>
                     <p class="text-slate-400 text-sm leading-relaxed mb-4">Robust backend architectures, real-time sync systems, secure RESTful/GraphQL APIs, and microservices.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="skill-tag">Python (Django/Flask)</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">WebSockets</span>
+                        <span class="skill-tag">Python (Django, Flask)</span>
+                        <span class="skill-tag">Node.js & PHP</span>
+                        <span class="skill-tag">WebSockets & GraphQL</span>
                         <span class="skill-tag">PostgreSQL / MySQL</span>
                         <span class="skill-tag">AWS (S3, EC2)</span>
+                        <span class="skill-tag">Fastlane & GitHub Actions</span>
                     </div>
                 </div>
             </div>
@@ -204,111 +209,481 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
                 <div>
-                    <h2 class="text-4xl font-extrabold text-white">Master Project Catalog</h2>
-                    <p class="text-slate-400 mt-2">Filter through flagship AI solutions, enterprise mobility, and native platforms.</p>
+                    <h2 class="text-4xl font-extrabold text-white">Comprehensive Master Project Catalog</h2>
+                    <p class="text-slate-400 mt-2">All 20 projects across AI Era, Enterprise Mobility, Native iOS, and Early Career stages.</p>
                 </div>
 
                 <!-- Category Filters -->
                 <div class="flex flex-wrap gap-2" id="project-filters">
-                    <button data-filter="all" class="filter-btn active">All Projects</button>
-                    <button data-filter="ai" class="filter-btn">AI & Agentic (2024-2026)</button>
-                    <button data-filter="enterprise" class="filter-btn">Enterprise Mobility</button>
-                    <button data-filter="native" class="filter-btn">Native iOS Solutions</button>
+                    <button data-filter="all" class="filter-btn active">All (20)</button>
+                    <button data-filter="ai" class="filter-btn">A. AI & Agentic Era</button>
+                    <button data-filter="matellio" class="filter-btn">B. Matellio Inc</button>
+                    <button data-filter="cg" class="filter-btn">C. CG Technosoft</button>
+                    <button data-filter="early" class="filter-btn">D. Early Career</button>
                 </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
                 
-                <!-- TalkndhealAI -->
+                <!-- SECTION A: AI & AGENTIC ERA PROJECTS -->
+                
+                <!-- 1. TalkndhealAI -->
                 <div class="project-card" data-category="ai">
                     <div class="flex items-center justify-between mb-4">
                         <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-mono font-semibold">AI Healthcare</span>
-                        <span class="text-slate-500 text-xs font-mono">App Store: 6756697690</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">App Store ID: 6756697690</span>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">TalkndhealAI</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Conversational AI mobile platform delivering empathetic mental wellness support, therapist matching, and therapeutic session caching.</p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
+                    <p class="text-xs text-indigo-300 font-mono mb-3">Domain: AI Healthcare & Mental Wellness | Role: Full-Stack & AI Mobile Architect</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Conversational AI mobile platform providing empathetic mental wellness support and therapeutic dialogue.</li>
+                        <li>Submitted and deployed to Apple App Store (Developer Entity: Immortal Varta).</li>
+                        <li>Integrated administrative controls for therapist assignment, compatibility matching, and session tracking.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Swift</span>
                         <span class="mini-tag">SwiftUI</span>
-                        <span class="mini-tag">NLP Pipeline</span>
-                        <span class="mini-tag">Secure Session</span>
+                        <span class="mini-tag">Conversational AI</span>
+                        <span class="mini-tag">NLP Models</span>
+                        <span class="mini-tag">Secure Session Caching</span>
                     </div>
                 </div>
 
-                <!-- Voca Engine -->
+                <!-- 2. Voca Engine -->
                 <div class="project-card" data-category="ai">
                     <div class="flex items-center justify-between mb-4">
                         <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono font-semibold">Conversational AI</span>
-                        <span class="text-slate-500 text-xs font-mono">Autonomous Engine</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Autonomous Engine</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-2">Voca Telecom Engine</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Autonomous AI personal assistant that handles calls, utilizing GGUF quantized local LLMs on Apple Silicon (24GB Mac) for sub-second responses.</p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
+                    <h3 class="text-2xl font-bold text-white mb-2">Voca — AI Personal Assistant</h3>
+                    <p class="text-xs text-cyan-300 font-mono mb-3">Domain: Conversational AI & Telecom | Role: Lead Architect & Developer</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Advanced AI mobile assistant built to autonomously answer, triage, and manage cellular phone calls.</li>
+                        <li>Researched Android Telecom framework audio stream injection.</li>
+                        <li>Ran quantized local LLMs (GGUF) on Apple Silicon (24GB Mac environment) for sub-second latency.</li>
+                        <li>Designed voice-to-intent pipeline execution for real-time call handling.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
                         <span class="mini-tag">GGUF Quantization</span>
+                        <span class="mini-tag">Apple Silicon</span>
                         <span class="mini-tag">Local LLM</span>
-                        <span class="mini-tag">Telecom Audio API</span>
+                        <span class="mini-tag">Telecom Framework</span>
+                        <span class="mini-tag">Voice Pipeline</span>
                     </div>
                 </div>
 
-                <!-- MCP Workflow -->
+                <!-- 3. VegFrooto -->
                 <div class="project-card" data-category="ai">
                     <div class="flex items-center justify-between mb-4">
-                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold">Developer Tools</span>
-                        <span class="text-slate-500 text-xs font-mono">Agentic Workflow</span>
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold">Agritech & E-Commerce</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Hyperlocal</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">VegFrooto Platform</h3>
+                    <p class="text-xs text-emerald-300 font-mono mb-3">Domain: Logistics & Agritech | Role: Full-Stack System Architect</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Multi-tenant e-commerce platform delivering fresh agricultural produce directly to consumers.</li>
+                        <li>Implemented live catalog management, automated order dispatching, and optimized delivery routing.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Full-Stack</span>
+                        <span class="mini-tag">Live Catalog</span>
+                        <span class="mini-tag">Order Tracking</span>
+                        <span class="mini-tag">Route Optimization</span>
+                    </div>
+                </div>
+
+                <!-- 4. Agentic MCP Workflows -->
+                <div class="project-card" data-category="ai">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-mono font-semibold">Developer Tooling</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Agentic Automation</span>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">Agentic MCP Integrations</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Model Context Protocol server integrations within Cursor & Antigravity IDE environments for repository contextualization and autonomous execution.</p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
+                    <p class="text-xs text-indigo-300 font-mono mb-3">Domain: Dev Tooling & Automation | Role: Individual Contributor</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Built and evaluated Model Context Protocol (MCP) server integrations within Cursor and Antigravity environments.</li>
+                        <li>Enabled automated repository contextualization, intent-driven execution, and multi-source synchronization.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
                         <span class="mini-tag">MCP Tools</span>
-                        <span class="mini-tag">Cursor</span>
+                        <span class="mini-tag">Cursor IDE</span>
                         <span class="mini-tag">Antigravity</span>
+                        <span class="mini-tag">Auto Context</span>
                     </div>
                 </div>
 
-                <!-- Leman Health -->
-                <div class="project-card" data-category="enterprise">
+                <!-- SECTION B: MATELLIO INC PROJECTS -->
+
+                <!-- 5. Leman Health -->
+                <div class="project-card" data-category="matellio">
                     <div class="flex items-center justify-between mb-4">
-                        <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-mono font-semibold">Telehealth</span>
-                        <span class="text-slate-500 text-xs font-mono">Matellio Inc</span>
+                        <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-mono font-semibold">Healthcare</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">Leman Health Technology</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Dual mobile app platform for patients and physiotherapists with real-time websocket chat, session tracking, and health compliance.</p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
+                    <p class="text-xs text-purple-300 font-mono mb-3">Comprehensive Telehealth Physiotherapy Platform</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Dual dedicated mobile applications serving Patients and Therapists.</li>
+                        <li>Features algorithmic compatibility matching, exercise regimens, and real-time therapist consultation chats.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">iOS Native</span>
                         <span class="mini-tag">Swift</span>
                         <span class="mini-tag">WebSockets</span>
-                        <span class="mini-tag">HIPAA/Health Spec</span>
+                        <span class="mini-tag">Secure Health Data</span>
                     </div>
                 </div>
 
-                <!-- Muferral -->
-                <div class="project-card" data-category="enterprise">
+                <!-- 6. Phoenix Technology -->
+                <div class="project-card" data-category="matellio">
                     <div class="flex items-center justify-between mb-4">
-                        <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-mono font-semibold">Marketplace</span>
-                        <span class="text-slate-500 text-xs font-mono">Matellio Inc</span>
+                        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono font-semibold">Enterprise Resource</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Sr. iOS Developer</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-2">Muferral Platform</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Multi-category on-demand marketplace supporting property rentals, hourly gigs, and retail with PubNub chat and 12+ localized languages.</p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
+                    <h3 class="text-2xl font-bold text-white mb-2">Phoenix Technology</h3>
+                    <p class="text-xs text-blue-300 font-mono mb-3">Enterprise Payroll & Timesheet Management</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Enterprise resource management suite for directors, project managers, and HR departments.</li>
+                        <li>Built automated clock-in/out geolocation, timesheets, expense reimbursement, leave tracking, and overtime quotas.</li>
+                        <li>Interactive business analytics dashboards with role-based access management.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Geolocation</span>
+                        <span class="mini-tag">Analytics Dashboards</span>
+                        <span class="mini-tag">RBAC</span>
+                        <span class="mini-tag">Swift</span>
+                    </div>
+                </div>
+
+                <!-- 7. Muferral Marketplace -->
+                <div class="project-card" data-category="matellio">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold">On-Demand Marketplace</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Sr. iOS Developer</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Muferral Marketplace</h3>
+                    <p class="text-xs text-amber-300 font-mono mb-3">Multi-category Marketplace Platform</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Connects Offerors and Clients for property rentals, vehicle leasing, hourly gigs, and product sales.</li>
+                        <li>Integrated PubNub chat, Zendesk SDK, Branch.io referral engine, and Amazon S3 storage.</li>
+                        <li>Full internationalization supporting 12+ languages (including English and Arabic).</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
                         <span class="mini-tag">PubNub</span>
+                        <span class="mini-tag">Zendesk SDK</span>
                         <span class="mini-tag">Branch.io</span>
-                        <span class="mini-tag">AWS S3</span>
+                        <span class="mini-tag">Amazon S3</span>
+                        <span class="mini-tag">Localization (Arabic)</span>
                     </div>
                 </div>
 
-                <!-- Support Leaf -->
-                <div class="project-card" data-category="native">
+                <!-- 8. Accu-Image -->
+                <div class="project-card" data-category="matellio">
                     <div class="flex items-center justify-between mb-4">
-                        <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold">RTC / EdTech</span>
-                        <span class="text-slate-500 text-xs font-mono">CG Technosoft</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-500/10 text-slate-300 text-xs font-mono font-semibold">Invoice Automation</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Accu-Image Invoice Mgmt</h3>
+                    <p class="text-xs text-slate-300 font-mono mb-3">Enterprise Workflow Automation</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Mobile workflow automation enabling executives to inspect, verify, and approve vendor invoices remotely.</li>
+                        <li>Complete with automated email audit trails upon approval.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Mobile Workflow</span>
+                        <span class="mini-tag">Audit Trail</span>
+                        <span class="mini-tag">PDF Verification</span>
+                    </div>
+                </div>
+
+                <!-- 9. Credit360 -->
+                <div class="project-card" data-category="matellio">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold">Fintech</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Credit360</h3>
+                    <p class="text-xs text-emerald-300 font-mono mb-3">Consumer Financial Mobility App</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Provides real-time credit score monitoring, financial health indicators, and alert notifications.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Fintech</span>
+                        <span class="mini-tag">Credit Scoring</span>
+                        <span class="mini-tag">Push Notifications</span>
+                    </div>
+                </div>
+
+                <!-- 10. Wadhwas -->
+                <div class="project-card" data-category="matellio">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 text-xs font-mono font-semibold">E-Commerce</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Wadhwas Retail Platform</h3>
+                    <p class="text-xs text-pink-300 font-mono mb-3">Consumer Retail Shopping</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Consumer e-commerce and shopping platform with rich product catalogs, secure checkout, and status tracking.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Retail</span>
+                        <span class="mini-tag">Payment Checkout</span>
+                        <span class="mini-tag">Order Tracking</span>
+                    </div>
+                </div>
+
+                <!-- 11. Juzmarried -->
+                <div class="project-card" data-category="matellio">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-400 text-xs font-mono font-semibold">Social Networking</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Juzmarried</h3>
+                    <p class="text-xs text-rose-300 font-mono mb-3">Matchmaking & Matrimonial Networking</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Modern matrimonial platform with verified profile systems, preference matching, and secure communication channels.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Matchmaking</span>
+                        <span class="mini-tag">Profile Verification</span>
+                        <span class="mini-tag">Secure Messaging</span>
+                    </div>
+                </div>
+
+                <!-- 12. Steel Cart -->
+                <div class="project-card" data-category="matellio">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-orange-500/10 text-orange-400 text-xs font-mono font-semibold">B2B Industrial</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Steel Cart</h3>
+                    <p class="text-xs text-orange-300 font-mono mb-3">Industrial Bulk E-Commerce</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>B2B e-commerce platform for bulk construction and steel ordering with volume pricing calculations and delivery tracking.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">B2B E-Commerce</span>
+                        <span class="mini-tag">Dynamic Pricing</span>
+                        <span class="mini-tag">Logistics</span>
+                    </div>
+                </div>
+
+                <!-- 13. JCHSPFA / HKPFA -->
+                <div class="project-card" data-category="matellio">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono font-semibold">Community App</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">JCHSPFA / HKPFA App</h3>
+                    <p class="text-xs text-cyan-300 font-mono mb-3">Organizational Services Platform</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Supports membership administration, event registrations, news feeds, and organizational services.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Membership Portal</span>
+                        <span class="mini-tag">Event Sync</span>
+                        <span class="mini-tag">News Feeds</span>
+                    </div>
+                </div>
+
+                <!-- 14. Allegro & HKMC Platforms -->
+                <div class="project-card" data-category="matellio">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-mono font-semibold">Real Estate / VR</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Allegro & HKMC Platforms</h3>
+                    <p class="text-xs text-indigo-300 font-mono mb-3">Architectural Virtual Touring Systems</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>High-end architectural virtual touring system featuring 360-degree interactive video sync.</li>
+                        <li>Includes floorplan webviews, dynamic mapping, and payment flows for membership and donations.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">360 Virtual Tour</span>
+                        <span class="mini-tag">Floorplan Webviews</span>
+                        <span class="mini-tag">Dynamic Mapping</span>
+                    </div>
+                </div>
+
+                <!-- SECTION C: NATIVE iOS SOLUTIONS - CG TECHNOSOFT -->
+
+                <!-- 15. Support Leaf -->
+                <div class="project-card" data-category="cg">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold">EdTech / RTC</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">CG Technosoft</span>
                     </div>
                     <h3 class="text-2xl font-bold text-white mb-2">Support Leaf</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Academic & professional mentorship platform featuring real-time audio/video calls via TokBox, CallKit, and QuickBlox chat.</p>
-                    <div class="flex flex-wrap gap-2 mt-auto">
-                        <span class="mini-tag">TokBox</span>
+                    <p class="text-xs text-amber-300 font-mono mb-3">Mentorship & Design Network</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Academic and professional mentorship network connecting users with subject matter experts.</li>
+                        <li>Features QuickBlox chat, TokBox (Vonage) audio/video conferencing, Apple CallKit, PushKit silent notifications, and In-App Purchases.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">TokBox Video API</span>
+                        <span class="mini-tag">QuickBlox</span>
                         <span class="mini-tag">CallKit</span>
                         <span class="mini-tag">PushKit</span>
+                        <span class="mini-tag">In-App Purchase</span>
                     </div>
                 </div>
 
+                <!-- 16. Judaísmo a fondo -->
+                <div class="project-card" data-category="cg">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 text-xs font-mono font-semibold">EdTech Multimedia</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">CG Technosoft</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Judaísmo a fondo</h3>
+                    <p class="text-xs text-teal-300 font-mono mb-3">Spanish Educational Platform</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Multimedia educational app delivering religious and cultural courses in Spanish.</li>
+                        <li>Incorporate high-performance Document Viewer, native Audio Player, and embedded YouTube player.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Doc Viewer</span>
+                        <span class="mini-tag">Native Audio Player</span>
+                        <span class="mini-tag">YouTube API</span>
+                    </div>
+                </div>
+
+                <!-- 17. Orderstay -->
+                <div class="project-card" data-category="cg">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-violet-500/10 text-violet-400 text-xs font-mono font-semibold">Hospitality</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">CG Technosoft</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Orderstay</h3>
+                    <p class="text-xs text-violet-300 font-mono mb-3">Digital Hospitality Concierge</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Concierge app for hospitality chains enabling direct real-time communication between hotel guests and concierge staff.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Concierge Messaging</span>
+                        <span class="mini-tag">Hotel Systems</span>
+                        <span class="mini-tag">iOS Native</span>
+                    </div>
+                </div>
+
+                <!-- SECTION D: EARLY CAREER APPLICATIONS -->
+
+                <!-- 18. Mobile Pandit -->
+                <div class="project-card" data-category="early">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-400 text-xs font-mono font-semibold">Media & Streaming</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Techno Softwares</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Mobile Pandit & Pandit Pro</h3>
+                    <p class="text-xs text-rose-300 font-mono mb-3">Cultural & Audio Streaming App</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li>Cultural ritual guidance and audio player featuring background audio streaming, social auth, and subscriptions.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Background Audio</span>
+                        <span class="mini-tag">Social Auth</span>
+                        <span class="mini-tag">Subscriptions</span>
+                    </div>
+                </div>
+
+                <!-- 19. Mybag & Martgram -->
+                <div class="project-card" data-category="early">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-sky-500/10 text-sky-400 text-xs font-mono font-semibold">EdTech & Shopping</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Logicspice</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Mybag & Martgram Apps</h3>
+                    <p class="text-xs text-sky-300 font-mono mb-3">Video Streaming & Social Shopping</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li><strong>Mybag:</strong> Arabic educational video streaming application with categorized video tutorials.</li>
+                        <li><strong>Martgram:</strong> Cross-border e-commerce platform with Instagram integration and multi-language support.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Video Streaming</span>
+                        <span class="mini-tag">Instagram Sync</span>
+                        <span class="mini-tag">Localization</span>
+                    </div>
+                </div>
+
+                <!-- 20. Raydaar, Localgenii & MCA Portal -->
+                <div class="project-card" data-category="early">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold">Geo & Web</span>
+                        <span class="text-slate-400 text-xs font-mono bg-slate-800/60 px-2 py-0.5 rounded">Early Career / MCA</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Raydaar, Localgenii & MCA</h3>
+                    <p class="text-xs text-emerald-300 font-mono mb-3">Security, Travel Discovery & Web</p>
+                    <ul class="text-slate-400 text-xs leading-relaxed space-y-1.5 mb-6 list-disc list-inside">
+                        <li><strong>Raydaar:</strong> Mobile security and geo-fencing application.</li>
+                        <li><strong>Localgenii:</strong> Travel discovery platform with in-app messaging.</li>
+                        <li><strong>Online Shopping Portal:</strong> Database & transaction pipeline during MCA degree.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 mt-auto border-t border-slate-800/80 pt-4">
+                        <span class="mini-tag">Geo-Fencing</span>
+                        <span class="mini-tag">Messaging</span>
+                        <span class="mini-tag">Database Architecture</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="py-16 border-t border-slate-800 bg-slate-900/40 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Education -->
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <i data-lucide="graduation-cap" class="text-indigo-400"></i> Education
+                </h3>
+                <div class="space-y-4">
+                    <div class="p-5 rounded-xl bg-slate-950 border border-slate-800">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Master of Computer Applications (MCA)</h4>
+                                <p class="text-slate-400 text-sm">RTU Govt. College — Bikaner</p>
+                            </div>
+                            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">2016 | 75% Distinction</span>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-950 border border-slate-800">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Bachelor of Science in Information Tech (BSC-IT)</h4>
+                                <p class="text-slate-400 text-sm">Sikkim Manipal University (SMU)</p>
+                            </div>
+                            <span class="text-xs font-mono text-cyan-400 bg-cyan-500/10 px-2.5 py-1 rounded">2012 | 62.78%</span>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl bg-slate-950 border border-slate-800">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Higher Secondary (12th Grade)</h4>
+                                <p class="text-slate-400 text-sm">Rajasthan Board of Secondary Education</p>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400 bg-slate-800 px-2.5 py-1 rounded">2009 | 55%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                    <i data-lucide="award" class="text-emerald-400"></i> Professional Certifications
+                </h3>
+                <div class="p-5 rounded-xl bg-slate-950 border border-slate-800">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 rounded-lg bg-indigo-500/10 text-indigo-400">
+                            <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-white">iPhone (iOS with Swift) Development Training</h4>
+                            <p class="text-slate-400 text-sm">GempulseInfotech Pvt. Ltd</p>
+                            <span class="text-xs font-mono text-indigo-400 mt-2 inline-block">Issued 2016</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -317,8 +692,8 @@
     <section id="experience" class="py-24 relative z-10">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center space-y-4 mb-16">
-                <h2 class="text-4xl font-extrabold text-white">Career Evolution</h2>
-                <p class="text-slate-400">10+ Years of technical leadership and hands-on execution.</p>
+                <h2 class="text-4xl font-extrabold text-white">Work Experience</h2>
+                <p class="text-slate-400">10+ Years of leadership, architecture, and deployment across top engineering firms.</p>
             </div>
 
             <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
@@ -331,7 +706,7 @@
                         <span class="md:hidden text-xs font-mono text-indigo-400 block mb-2">02/2021 - Present</span>
                         <h3 class="text-xl font-bold text-white">Senior iOS & Full-Stack Developer / Tech Lead</h3>
                         <p class="text-slate-400 text-sm font-medium mb-3">Matellio Inc (India) — Jaipur, Rajasthan</p>
-                        <p class="text-slate-300 text-sm leading-relaxed">Leading full-stack and mobile architectural direction. Spearheading transitions into AI Agentic Workflows while delivering scalable enterprise solutions across Telehealth, Enterprise HR, and Global Marketplaces.</p>
+                        <p class="text-slate-300 text-sm leading-relaxed">Leading full-stack and mobile architectural direction. Architected enterprise platforms including Leman Health, Phoenix Payroll, Muferral Marketplace, and led transitions into autonomous AI Agentic workflows.</p>
                     </div>
                 </div>
 
@@ -343,19 +718,31 @@
                         <span class="md:hidden text-xs font-mono text-slate-500 block mb-2">04/2017 - 01/2021</span>
                         <h3 class="text-xl font-bold text-white">iOS Developer</h3>
                         <p class="text-slate-400 text-sm font-medium mb-3">CG Technosoft Pvt. Ltd — Jaipur, Rajasthan</p>
-                        <p class="text-slate-300 text-sm leading-relaxed">Designed and integrated complex real-time audio/video streaming apps, CallKit architectures, and multi-language learning environments.</p>
+                        <p class="text-slate-300 text-sm leading-relaxed">Designed and integrated complex real-time audio/video streaming apps (TokBox, CallKit, PushKit), multi-language educational systems, and hospitality platforms.</p>
                     </div>
                 </div>
 
                 <!-- Role 3 -->
                 <div class="relative pl-8 group">
                     <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
-                    <div class="hidden md:block absolute -left-36 top-1 text-xs font-mono text-slate-500">2016 - 2017</div>
+                    <div class="hidden md:block absolute -left-36 top-1 text-xs font-mono text-slate-500">09/2016 - 04/2017</div>
                     <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800">
-                        <span class="md:hidden text-xs font-mono text-slate-500 block mb-2">2016 - 2017</span>
+                        <span class="md:hidden text-xs font-mono text-slate-500 block mb-2">09/2016 - 04/2017</span>
                         <h3 class="text-xl font-bold text-white">Junior iOS Developer</h3>
-                        <p class="text-slate-400 text-sm font-medium mb-3">Techno Softwares & Logicspice Pvt. Ltd</p>
+                        <p class="text-slate-400 text-sm font-medium mb-3">Techno Softwares Pvt. Ltd — Jaipur, Rajasthan</p>
                         <p class="text-slate-300 text-sm leading-relaxed">Built background streaming audio players, e-commerce integrations, cross-border social shopping applications, and geo-fencing software.</p>
+                    </div>
+                </div>
+
+                <!-- Role 4 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
+                    <div class="hidden md:block absolute -left-36 top-1 text-xs font-mono text-slate-500">04/2016 - 08/2016</div>
+                    <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800">
+                        <span class="md:hidden text-xs font-mono text-slate-500 block mb-2">04/2016 - 08/2016</span>
+                        <h3 class="text-xl font-bold text-white">Junior iOS Developer</h3>
+                        <p class="text-slate-400 text-sm font-medium mb-3">Logicspice Pvt. Ltd — Jaipur, Rajasthan</p>
+                        <p class="text-slate-300 text-sm leading-relaxed">Worked on full lifecycle development of e-commerce and instant messaging applications.</p>
                     </div>
                 </div>
 
@@ -377,7 +764,7 @@
                     <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> +91 7737333527
                 </a>
                 <span class="text-slate-400 text-sm flex items-center gap-2">
-                    <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400"></i> Jaipur, Rajasthan
+                    <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400"></i> Jaipur, 303338 Rajasthan
                 </span>
             </div>
 
