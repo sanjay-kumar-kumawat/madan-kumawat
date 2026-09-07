@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madan Kumawat | Senior Full-Stack & AI Mobile Architect</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#0f172a',
+                            cyan: '#06b6d4',
+                            emerald: '#10b981'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+
+    <!-- Background Matrix / Neural Canvas -->
+    <canvas id="bg-canvas" class="fixed inset-0 pointer-events-none z-0 opacity-20"></canvas>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-slate-950/80 backdrop-blur-md border-b border-slate-800 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent tracking-wide">
+                Madan Kumawat<span class="text-cyan-400">.ai</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition">About</a>
+                <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+                <a href="#experience" class="hover:text-cyan-400 transition">Experience</a>
+                <a href="#terminal" class="hover:text-cyan-400 transition flex items-center gap-1.5 text-emerald-400"><i data-lucide="terminal" class="w-4 h-4"></i> MCP Terminal</a>
+            </div>
+
+            <a href="mailto:swtumadan@gmail.com" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-600 hover:from-indigo-500 hover:to-cyan-500 text-white font-medium text-sm transition shadow-lg shadow-indigo-500/20 flex items-center gap-2">
+                <i data-lucide="mail" class="w-4 h-4"></i> Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center z-10">
+        <div class="max-w-5xl mx-auto px-6 text-center space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-mono animate-pulse">
+                <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+                AI Agentic Era & Mobile Architecture Specialist
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
+                Architecting <span class="bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">Autonomous AI Workflows</span> & High-Scale Systems
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                Senior Full-Stack Engineer with 10+ years of experience leading mobile ecosystems (iOS, Swift, SwiftUI) and pioneering AI Agentic Workflows (MCP, local LLMs, quantized inference on Apple Silicon).
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                <a href="#projects" class="px-8 py-4 rounded-xl bg-white text-slate-900 font-bold hover:bg-slate-200 transition shadow-xl flex items-center gap-2">
+                    <i data-lucide="folder-git-2" class="w-5 h-5"></i> Explore 20+ Projects
+                </a>
+                <a href="#terminal" class="px-8 py-4 rounded-xl border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-200 font-medium transition backdrop-blur-sm flex items-center gap-2">
+                    <i data-lucide="bot" class="w-5 h-5 text-emerald-400"></i> Run Interactive AI Prompt
+                </a>
+            </div>
+
+            <!-- Quick Metrics Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-16 border-t border-slate-800/80">
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-extrabold text-cyan-400">10+ Years</div>
+                    <div class="text-sm text-slate-400">Engineering Mastery</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-extrabold text-emerald-400">20+ Apps</div>
+                    <div class="text-sm text-slate-400">Shipped Globally</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-extrabold text-indigo-400">MCP & LLMs</div>
+                    <div class="text-sm text-slate-400">Apple Silicon Local AI</div>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/50">
+                    <div class="text-3xl font-extrabold text-purple-400">MCA Degree</div>
+                    <div class="text-sm text-slate-400">75% Distinction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive AI Terminal Section -->
+    <section id="terminal" class="py-20 relative z-10 bg-slate-900/30 border-y border-slate-800">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-2 text-white">
+                        <i data-lucide="terminal" class="text-emerald-400"></i> Model Context Protocol (MCP) Terminal
+                    </h2>
+                    <p class="text-slate-400 text-sm">Query Madan's resume using mock MCP interactive agents.</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+                </div>
+            </div>
+
+            <div class="bg-slate-950 rounded-2xl border border-slate-800 p-6 font-mono text-sm shadow-2xl overflow-hidden">
+                <div id="terminal-output" class="space-y-3 h-64 overflow-y-auto mb-4 text-slate-300 pr-2">
+                    <div class="text-slate-500">// Welcome to Madan's AI Agent Environment v2.6</div>
+                    <div class="text-emerald-400">> System Ready. Type a command or click a preset query below.</div>
+                </div>
+                
+                <div class="flex items-center gap-2 border-t border-slate-800 pt-4">
+                    <span class="text-emerald-400 font-bold">$</span>
+                    <input type="text" id="terminal-input" placeholder="e.g. 'ai-stack', 'contact', 'summary', 'clear'..." class="w-full bg-transparent border-none text-white focus:outline-none font-mono">
+                    <button id="terminal-send" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-sans text-xs font-semibold">Execute</button>
+                </div>
+
+                <div class="flex flex-wrap gap-2 mt-4 pt-3 border-t border-slate-900">
+                    <button onclick="runCommand('ai-stack')" class="px-3 py-1 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-indigo-300 transition">ai-stack</button>
+                    <button onclick="runCommand('flagship-projects')" class="px-3 py-1 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-cyan-300 transition">flagship-projects</button>
+                    <button onclick="runCommand('contact')" class="px-3 py-1 rounded-md bg-slate-900 hover:bg-slate-800 border border-slate-800 text-xs text-emerald-300 transition">contact</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skill Matrix -->
+    <section id="skills" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-4xl font-extrabold text-white">Technical Skill Matrix</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Bridging high-performance mobile native applications with modern agentic AI infrastructures.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- AI Skill Card -->
+                <div class="p-8 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 hover:border-indigo-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">AI & Agentic Systems</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Autonomous agent design, local LLM quantization (GGUF), Model Context Protocol (MCP), and Cursor IDE integration.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">MCP</span>
+                        <span class="skill-tag">Local LLMs</span>
+                        <span class="skill-tag">GGUF/Llama.cpp</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Claude / OpenAI API</span>
+                    </div>
+                </div>
+
+                <!-- Mobile Skill Card -->
+                <div class="p-8 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 hover:border-cyan-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="smartphone" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Mobile Engineering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Deep expertise in iOS native architectures, swift execution pipelines, real-time communications, and offline-first apps.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Swift & SwiftUI</span>
+                        <span class="skill-tag">Objective-C</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">CallKit / PushKit</span>
+                        <span class="skill-tag">Combine</span>
+                    </div>
+                </div>
+
+                <!-- Full Stack Card -->
+                <div class="p-8 rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 hover:border-emerald-500/50 transition group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Full-Stack & Cloud</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Robust backend architectures, real-time sync systems, secure RESTful/GraphQL APIs, and microservices.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Python (Django/Flask)</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">WebSockets</span>
+                        <span class="skill-tag">PostgreSQL / MySQL</span>
+                        <span class="skill-tag">AWS (S3, EC2)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Project Catalog Section -->
+    <section id="projects" class="py-24 bg-slate-900/20 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl font-extrabold text-white">Master Project Catalog</h2>
+                    <p class="text-slate-400 mt-2">Filter through flagship AI solutions, enterprise mobility, and native platforms.</p>
+                </div>
+
+                <!-- Category Filters -->
+                <div class="flex flex-wrap gap-2" id="project-filters">
+                    <button data-filter="all" class="filter-btn active">All Projects</button>
+                    <button data-filter="ai" class="filter-btn">AI & Agentic (2024-2026)</button>
+                    <button data-filter="enterprise" class="filter-btn">Enterprise Mobility</button>
+                    <button data-filter="native" class="filter-btn">Native iOS Solutions</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-grid">
+                
+                <!-- TalkndhealAI -->
+                <div class="project-card" data-category="ai">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-mono font-semibold">AI Healthcare</span>
+                        <span class="text-slate-500 text-xs font-mono">App Store: 6756697690</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">TalkndhealAI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Conversational AI mobile platform delivering empathetic mental wellness support, therapist matching, and therapeutic session caching.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="mini-tag">SwiftUI</span>
+                        <span class="mini-tag">NLP Pipeline</span>
+                        <span class="mini-tag">Secure Session</span>
+                    </div>
+                </div>
+
+                <!-- Voca Engine -->
+                <div class="project-card" data-category="ai">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono font-semibold">Conversational AI</span>
+                        <span class="text-slate-500 text-xs font-mono">Autonomous Engine</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Voca Telecom Engine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Autonomous AI personal assistant that handles calls, utilizing GGUF quantized local LLMs on Apple Silicon (24GB Mac) for sub-second responses.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="mini-tag">GGUF Quantization</span>
+                        <span class="mini-tag">Local LLM</span>
+                        <span class="mini-tag">Telecom Audio API</span>
+                    </div>
+                </div>
+
+                <!-- MCP Workflow -->
+                <div class="project-card" data-category="ai">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-mono font-semibold">Developer Tools</span>
+                        <span class="text-slate-500 text-xs font-mono">Agentic Workflow</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Agentic MCP Integrations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Model Context Protocol server integrations within Cursor & Antigravity IDE environments for repository contextualization and autonomous execution.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="mini-tag">MCP Tools</span>
+                        <span class="mini-tag">Cursor</span>
+                        <span class="mini-tag">Antigravity</span>
+                    </div>
+                </div>
+
+                <!-- Leman Health -->
+                <div class="project-card" data-category="enterprise">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-mono font-semibold">Telehealth</span>
+                        <span class="text-slate-500 text-xs font-mono">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Leman Health Technology</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Dual mobile app platform for patients and physiotherapists with real-time websocket chat, session tracking, and health compliance.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="mini-tag">Swift</span>
+                        <span class="mini-tag">WebSockets</span>
+                        <span class="mini-tag">HIPAA/Health Spec</span>
+                    </div>
+                </div>
+
+                <!-- Muferral -->
+                <div class="project-card" data-category="enterprise">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-mono font-semibold">Marketplace</span>
+                        <span class="text-slate-500 text-xs font-mono">Matellio Inc</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Muferral Platform</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Multi-category on-demand marketplace supporting property rentals, hourly gigs, and retail with PubNub chat and 12+ localized languages.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="mini-tag">PubNub</span>
+                        <span class="mini-tag">Branch.io</span>
+                        <span class="mini-tag">AWS S3</span>
+                    </div>
+                </div>
+
+                <!-- Support Leaf -->
+                <div class="project-card" data-category="native">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-mono font-semibold">RTC / EdTech</span>
+                        <span class="text-slate-500 text-xs font-mono">CG Technosoft</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Support Leaf</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Academic & professional mentorship platform featuring real-time audio/video calls via TokBox, CallKit, and QuickBlox chat.</p>
+                    <div class="flex flex-wrap gap-2 mt-auto">
+                        <span class="mini-tag">TokBox</span>
+                        <span class="mini-tag">CallKit</span>
+                        <span class="mini-tag">PushKit</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Timeline -->
+    <section id="experience" class="py-24 relative z-10">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-4xl font-extrabold text-white">Career Evolution</h2>
+                <p class="text-slate-400">10+ Years of technical leadership and hands-on execution.</p>
+            </div>
+
+            <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+                
+                <!-- Role 1 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-slate-950 group-hover:scale-125 transition"></div>
+                    <div class="hidden md:block absolute -left-36 top-1 text-xs font-mono text-indigo-400">02/2021 - Present</div>
+                    <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800">
+                        <span class="md:hidden text-xs font-mono text-indigo-400 block mb-2">02/2021 - Present</span>
+                        <h3 class="text-xl font-bold text-white">Senior iOS & Full-Stack Developer / Tech Lead</h3>
+                        <p class="text-slate-400 text-sm font-medium mb-3">Matellio Inc (India) — Jaipur, Rajasthan</p>
+                        <p class="text-slate-300 text-sm leading-relaxed">Leading full-stack and mobile architectural direction. Spearheading transitions into AI Agentic Workflows while delivering scalable enterprise solutions across Telehealth, Enterprise HR, and Global Marketplaces.</p>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-cyan-400 transition"></div>
+                    <div class="hidden md:block absolute -left-36 top-1 text-xs font-mono text-slate-500">04/2017 - 01/2021</div>
+                    <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800">
+                        <span class="md:hidden text-xs font-mono text-slate-500 block mb-2">04/2017 - 01/2021</span>
+                        <h3 class="text-xl font-bold text-white">iOS Developer</h3>
+                        <p class="text-slate-400 text-sm font-medium mb-3">CG Technosoft Pvt. Ltd — Jaipur, Rajasthan</p>
+                        <p class="text-slate-300 text-sm leading-relaxed">Designed and integrated complex real-time audio/video streaming apps, CallKit architectures, and multi-language learning environments.</p>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="relative pl-8 group">
+                    <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950 group-hover:bg-emerald-400 transition"></div>
+                    <div class="hidden md:block absolute -left-36 top-1 text-xs font-mono text-slate-500">2016 - 2017</div>
+                    <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800">
+                        <span class="md:hidden text-xs font-mono text-slate-500 block mb-2">2016 - 2017</span>
+                        <h3 class="text-xl font-bold text-white">Junior iOS Developer</h3>
+                        <p class="text-slate-400 text-sm font-medium mb-3">Techno Softwares & Logicspice Pvt. Ltd</p>
+                        <p class="text-slate-300 text-sm leading-relaxed">Built background streaming audio players, e-commerce integrations, cross-border social shopping applications, and geo-fencing software.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="py-16 border-t border-slate-800 bg-slate-950 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 text-center space-y-6">
+            <h2 class="text-2xl font-bold text-white">Ready to Build the Future of Autonomous Systems?</h2>
+            <p class="text-slate-400 max-w-lg mx-auto text-sm">Open for high-impact Individual Contributor (IC) roles in AI Agentic Systems, Full-Stack Architecture, and Mobile Engineering.</p>
+            
+            <div class="flex justify-center items-center gap-6 pt-4">
+                <a href="mailto:swtumadan@gmail.com" class="text-slate-400 hover:text-white transition flex items-center gap-2 text-sm">
+                    <i data-lucide="mail" class="w-4 h-4 text-cyan-400"></i> swtumadan@gmail.com
+                </a>
+                <a href="tel:+917737333527" class="text-slate-400 hover:text-white transition flex items-center gap-2 text-sm">
+                    <i data-lucide="phone" class="w-4 h-4 text-emerald-400"></i> +91 7737333527
+                </a>
+                <span class="text-slate-400 text-sm flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-indigo-400"></i> Jaipur, Rajasthan
+                </span>
+            </div>
+
+            <div class="pt-8 text-xs text-slate-600 border-t border-slate-900">
+                © 2026 Madan Kumawat. Hosted on GitHub Pages.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
