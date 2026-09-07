@@ -39,25 +39,27 @@ const terminalInput = document.getElementById('terminal-input');
 const terminalSend = document.getElementById('terminal-send');
 
 const COMMANDS = {
-    'ai-stack': `[AI Stack Details]
+    'ai-stack': `[AI Stack & Agentic Tools]
 - Model Context Protocol (MCP) integrations
 - Quantized Local LLMs (GGUF via Llama.cpp on Apple Silicon M-series, 24GB RAM)
-- RAG Systems, Claude API, OpenAI SDK
-- Cursor IDE & Antigravity Workflows`,
+- Autonomous Agentic Workflows & Tool Callings
+- RAG Systems, Claude API, OpenAI Integration
+- Cursor IDE & Antigravity Tooling`,
 
-    'flagship-projects': `[AI Flagships]
-1. TalkndhealAI -> Mental Wellness & Therapeutic AI App
-2. Voca Telecom Engine -> Sub-second latency call-answering AI assistant
-3. Agentic MCP Tools -> Contextual repository execution tools`,
+    'projects-list': `[Master Project Catalog (20 Projects)]
+A. AI ERA: TalkndhealAI, Voca Telecom Engine, VegFrooto, Agentic MCP Integrations
+B. MATELLIO: Leman Health, Phoenix Technology, Muferral Marketplace, Accu-Image, Credit360, Wadhwas, Juzmarried, Steel Cart, JCHSPFA/HKPFA, Allegro/HKMC
+C. CG TECHNOSOFT: Support Leaf, Judaísmo a fondo, Orderstay
+D. EARLY CAREER: Mobile Pandit, Mybag, Martgram, Raydaar, Localgenii, MCA Portal`,
 
-    'contact': `[Contact Coordinates]
+    'contact': `[Contact Details]
 - Email: swtumadan@gmail.com
 - Phone: +91 7737333527
-- Location: Jaipur, 303338 Rajasthan, India`,
+- Address: Jaipur, 303338 Rajasthan, India`,
 
-    'summary': `Senior Full-Stack & Mobile Architect transitioning to an autonomous high-impact IC in the AI Agentic Era. Over 10+ years of tech leadership experience.`,
+    'summary': `Results-driven Senior Full-Stack Engineer & Mobile Architect with over 10 years of experience. Transitioning from high-scale mobile ecosystem leadership (iOS, Swift, SwiftUI, React Native) to an autonomous IC in the AI Agentic Era.`,
 
-    'help': `Available commands: ai-stack, flagship-projects, contact, summary, clear`
+    'help': `Available commands: ai-stack, projects-list, contact, summary, clear`
 };
 
 function runCommand(cmd) {
